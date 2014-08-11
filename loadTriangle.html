@@ -1,0 +1,28 @@
+<canvas id="loadTriangle" width="200px" height="173.205px"></canvas>
+<script>
+	//draw the loading triangle
+	(function() {
+		var cs = document.getElementById("loadTriangle"),
+		c = cs.getContext("2d"),
+		stroke = 20,
+		w = 200,
+		h = 173.205,
+		a = Math.PI / 6,
+		xM = Math.cos(a) * stroke,
+		yM = Math.sin(a) * stroke;
+		c.fillStyle = "#151515";
+		c.beginPath();
+		c.moveTo(w / 2, 0);
+		c.lineTo(w, h);
+		c.lineTo(0, h);
+		c.closePath();
+		c.fill();
+		c.fillStyle = "#fff";
+		c.beginPath();
+		c.moveTo(w / 2, stroke);
+		c.lineTo(w - xM, h - yM);
+		c.lineTo(xM, h - yM);
+		c.closePath();
+		c.fill();
+	})();
+</script>

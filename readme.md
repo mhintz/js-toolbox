@@ -1,0 +1,1 @@
+A collection of little useful components, extracted from projects I've worked on, which I might want to use at a later date.
